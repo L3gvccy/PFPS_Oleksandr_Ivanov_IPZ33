@@ -19,11 +19,40 @@ header div {
   padding-bottom: 10px;
 }
 
+footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 .py {
   padding-top: 20px;
   padding-bottom: 20px;
