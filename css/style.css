@@ -30,13 +30,16 @@ footer p {
 }
 
 footer a {
-  text-decoration: none;
-  color: black;
   font-weight: 500;
 }
 
 footer a:hover {
   color: #007bff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -92,8 +95,6 @@ footer a:hover {
 }
 
 .navigation a {
-  text-decoration: none;
-  color: black;
   margin-right: 20px;
   font-weight: 500;
 }
