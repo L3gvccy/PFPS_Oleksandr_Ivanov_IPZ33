@@ -37,6 +37,16 @@ footer a:hover {
   color: #007bff;
 }
 
+.social-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sm-icon {
+  width: 24px;
+}
+
 a {
   text-decoration: none;
   color: black;
