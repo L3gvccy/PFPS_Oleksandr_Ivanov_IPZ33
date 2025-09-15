@@ -9,6 +9,13 @@
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 header {
   align-items: center;
   border-bottom: 1px solid #e0e0e0;
@@ -64,6 +71,9 @@ a {
 
 .flex-column {
   flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
 }
 
 .py {
@@ -121,7 +131,7 @@ a {
   text-decoration: none;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 10px 10px 10px 0px;
 }
 
 .btn:hover {
@@ -132,6 +142,10 @@ a {
 main img {
   display: block;
   margin: 0px auto;
+}
+
+aside {
+  padding: 10px;
 }
 
 table,
@@ -146,4 +160,50 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+select,
+textarea {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+  width: 100%;
+}
+
+fieldset {
+  padding: 15px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
 }

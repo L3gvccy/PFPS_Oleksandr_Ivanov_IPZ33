@@ -26,7 +26,92 @@
         </nav>
       </div>
     </header>
-    <main></main>
+
+    <div class="d-flex container py flex-row">
+      <main style="flex: 2">
+        <h2 class="text-center">Форма зворотнього зв’язку</h2>
+        <form>
+          <fieldset>
+            <legend>Персональна інформація</legend>
+
+            <div>
+              <label for="fullname"> Прізвище та ім’я: </label>
+              <input type="text" name="fullname" required />
+            </div>
+
+            <div>
+              <label for="email"> E-mail: </label>
+              <input type="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="age"> Вік: </label>
+              <input type="number" name="age" required />
+            </div>
+
+            <div>
+              <label for="education"> Освіта: </label>
+              <select name="education" required>
+                <option value="">Оберіть</option>
+                <option value="повна">Повна</option>
+                <option value="неповна">Неповна</option>
+                <option value="вища">Вища</option>
+                <option value="професійна">Професійна</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="purpose"> Мета зворотнього зв’язку: </label>
+            <select name="purpose" required>
+              <option value="">Оберіть</option>
+              <option value="співпраця">Співпраця</option>
+              <option value="скарга">
+                Скарга на порушення права власності
+              </option>
+              <option value="пропозиція">Пропозиція</option>
+              <option value="помилка">Наявність помилки</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="details"> Детально: </label>
+            <textarea
+              name="details"
+              maxlength="500"
+              placeholder="Опишіть вашу ситуацію..."
+              required
+            ></textarea>
+          </div>
+
+          <label>
+            <input type="checkbox" name="consent" required /> Даю згоду на
+            обробку персональних даних
+          </label>
+
+          <div class="d-flex flex-row">
+            <button type="submit" class="btn">Відправити</button>
+            <button type="reset" class="btn">Очистити форму</button>
+          </div>
+        </form>
+      </main>
+
+      <aside style="flex: 1">
+        <h3 class="text-center">Отримання відповіді</h3>
+        <p>Наші менеджери працюють за наступним графіком:</p>
+        <div class="py">
+          <p><b>Пн - Пт:</b> 9:00 - 18:00</p>
+          <p><b>Сб:</b> 9:00 - 15:00</p>
+          <p><b>Нд:</b> Вихідний</p>
+        </div>
+
+        <p>
+          Якщо ви відправляєте запит на зворотній зв'язок в робочий час, ви
+          отримаєте відповідь протягом 2-х годин
+        </p>
+      </aside>
+    </div>
+
     <footer>
       <div class="container align-center justify-between">
         <div class="d-flex align-center flex-column">
