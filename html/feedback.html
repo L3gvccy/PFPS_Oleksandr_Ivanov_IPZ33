@@ -27,30 +27,30 @@
       </div>
     </header>
 
-    <div class="d-flex container py flex-row">
-      <main style="flex: 2">
+    <div class="container py d-flex flex-row form-wrapper">
+      <main class="form-main">
         <h2 class="text-center">Форма зворотнього зв’язку</h2>
         <form>
           <fieldset>
             <legend>Персональна інформація</legend>
 
             <div>
-              <label for="fullname"> Прізвище та ім’я: </label>
+              <label for="fullname">Прізвище та ім’я:</label>
               <input type="text" name="fullname" required />
             </div>
 
             <div>
-              <label for="email"> E-mail: </label>
+              <label for="email">E-mail:</label>
               <input type="email" name="email" required />
             </div>
 
             <div>
-              <label for="age"> Вік: </label>
+              <label for="age">Вік:</label>
               <input type="number" name="age" required />
             </div>
 
             <div>
-              <label for="education"> Освіта: </label>
+              <label for="education">Освіта:</label>
               <select name="education" required>
                 <option value="">Оберіть</option>
                 <option value="повна">Повна</option>
@@ -62,7 +62,7 @@
           </fieldset>
 
           <div>
-            <label for="purpose"> Мета зворотнього зв’язку: </label>
+            <label for="purpose">Мета зворотнього зв’язку:</label>
             <select name="purpose" required>
               <option value="">Оберіть</option>
               <option value="співпраця">Співпраця</option>
@@ -75,7 +75,7 @@
           </div>
 
           <div>
-            <label for="details"> Детально: </label>
+            <label for="details">Детально:</label>
             <textarea
               name="details"
               maxlength="500"
@@ -85,18 +85,18 @@
           </div>
 
           <label>
-            <input type="checkbox" name="consent" required /> Даю згоду на
-            обробку персональних даних
+            <input type="checkbox" name="consent" required />
+            Даю згоду на обробку персональних даних
           </label>
 
-          <div class="d-flex flex-row">
+          <div class="d-flex flex-row flex-wrap gap-10">
             <button type="submit" class="btn">Відправити</button>
             <button type="reset" class="btn">Очистити форму</button>
           </div>
         </form>
       </main>
 
-      <aside style="flex: 1">
+      <aside class="form-aside">
         <h3 class="text-center">Отримання відповіді</h3>
         <p>Наші менеджери працюють за наступним графіком:</p>
         <div class="py">
