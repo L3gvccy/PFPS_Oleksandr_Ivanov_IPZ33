@@ -16,9 +16,17 @@ h3 {
   margin-top: 10px;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 header {
   align-items: center;
   border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header div {
@@ -112,10 +120,10 @@ a {
 .navigation li {
   list-style: none;
   display: inline-block;
+  margin: 20px 20px 20px 0px;
 }
 
 .navigation a {
-  margin-right: 20px;
   font-weight: 500;
 }
 
@@ -206,4 +214,45 @@ fieldset {
 
 legend {
   font-weight: bold;
+}
+
+/* Lab Styles */
+#main-header-logo {
+  position: absolute;
+  top: 0;
+}
+
+#goals {
+  margin: 20px 10px;
+}
+
+#founders > table:hover {
+  transform: scale(1.05);
+}
+
+#contacts p {
+  transition: text-shadow 0.3s ease 2s;
+}
+
+#contacts p:hover {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.direction {
+  border: medium double hsl(36, 100%, 25%);
+  border-right: medium solid hsl(36, 100%, 25%);
+}
+
+#gov-collab {
+  font-weight: 100;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.direction img:focus {
+  filter: saturate(200%);
+}
+
+a:active {
+  color: #00520b !important;
 }
