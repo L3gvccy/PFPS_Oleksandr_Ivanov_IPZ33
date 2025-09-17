@@ -372,8 +372,6 @@ a:active {
 }
 
 .scrolling-text {
-  height: 80px;
-  overflow-y: auto;
   border: 1px solid #ddd;
   padding: 10px;
   font-weight: 500;
@@ -381,6 +379,13 @@ a:active {
 
 .scrolling-text-simple p {
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .scrolling-text {
+    height: 80px;
+    overflow-y: auto;
+  }
 }
 
 .form-wrapper {
