@@ -386,6 +386,10 @@ a:active {
     height: 80px;
     overflow-y: auto;
   }
+
+  .navigation {
+    margin-top: 48px;
+  }
 }
 
 .form-wrapper {
